@@ -1,0 +1,19 @@
+//
+// Created by os on 5/17/24.
+//
+
+#include "../h/scheduler.hpp"
+#include "../h/tcb.hpp"
+#include "../h/MemoryAllocator.hpp"
+
+List<TCB> Scheduler::readyThreadQueue;
+
+TCB* Scheduler::get()
+{
+    return readyThreadQueue.removeFirst();
+}
+
+void Scheduler::put(TCB *tcb)
+{
+    readyThreadQueue.addLast(tcb);
+}
