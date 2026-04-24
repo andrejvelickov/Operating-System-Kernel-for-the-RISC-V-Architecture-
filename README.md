@@ -1,5 +1,4 @@
 # OSprojekat
-# OSprojekat
 
 A bare-metal operating system kernel for the **RISC-V** architecture, developed as a university project at ETF (Electrical Engineering Faculty). The kernel is written in RISC-V Assembly and C++, and runs on the **QEMU** RISC-V virtual machine.
 
